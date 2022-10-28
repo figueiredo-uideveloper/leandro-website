@@ -1,0 +1,34 @@
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.golden-grid {
+    .grid-size {
+        &-1 {
+            background-color: brown;
+            height: 30px;
+            width: calc(100% / 1.618);
+            margin-left: $grid-positon-2;
+        }
+        &-2 {
+            background-color: black;
+            height: 30px;
+            width: $grid-size-2;
+            margin-left: 0;
+        }
+        &-3 {
+            background-color: blue;
+            height: 30px;
+            width: $grid-size-4;
+            margin-left: $grid-positon-3;
+        }
+        &-4 {
+            background-color: violet;
+            height: 30px;
+            width: $grid-size-3;
+            margin-left: $grid-positon-4;
+        }
+    }
+}
