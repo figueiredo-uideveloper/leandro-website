@@ -6,9 +6,28 @@
     list-style: none;
 }
 
-// html {
-//     font-size: 62.5%;
-// }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: auto;
+    min-height: 100%;
+    font-family: 'Epilogue', sans-serif;
+}
 
 img {
     max-width: 100%;

@@ -14,9 +14,3 @@ $grid-size-1: calc(100% / $phi);
 $grid-size-2: calc($grid-size-1 / $phi); // (100% / $phi) / $phi
 $grid-size-3: calc($grid-size-2 / 2); // ((100% / $phi) / $phi) / 2
 $grid-size-4: calc($grid-size-1 - $grid-size-3); // (100% / $phi) - (((100% / $phi) / $phi) / 2)
-
-
-// $grid-positon-1: 0;
-// $grid-positon-2: $grid-size-3;
-// $grid-positon-3: $grid-size-2;
-// $grid-positon-4: calc($grid-size-1 + $grid-size-3);
