@@ -10,7 +10,12 @@ $default-200: #8A8A8A;
 
 $phi: calc((1 + math.sqrt(5)) / 2); // 1.61803398874989 or "The Golden Ratio"
 
-$grid-size-1: calc(100% / $phi);
-$grid-size-2: calc($grid-size-1 / $phi); // (100% / $phi) / $phi
-$grid-size-3: calc($grid-size-2 / 2); // ((100% / $phi) / $phi) / 2
-$grid-size-4: calc($grid-size-1 - $grid-size-3); // (100% / $phi) - (((100% / $phi) / $phi) / 2)
+$golden-square-lg: calc(100% / $phi);
+$golden-square-md: calc($golden-square-lg / $phi); // (100% / $phi) / $phi
+
+$grid-size-sm: calc($golden-square-md / 2); // ((100% / $phi) / $phi) / 2
+$grid-size-md: calc($golden-square-lg - $grid-size-sm); // (100% / $phi) - (((100% / $phi) / $phi) / 2)
+
+
+// Breakpoints
+$desktop: 1620px;

@@ -19,6 +19,8 @@ html {
 
 html {
   font-size: 62.5%;
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 html,
@@ -26,6 +28,10 @@ body {
   height: auto;
   min-height: 100%;
   font-family: "Epilogue", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
 }
 
 img {
@@ -41,7 +47,7 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1512px;
+  max-width: 1620px;
   margin: 0 auto;
 }
 
@@ -76,30 +82,93 @@ button {
 .golden-ratio-grid.background-grid {
   position: fixed;
   width: 100%;
-  max-width: 1512px;
+  max-width: 1620px;
   margin: 0 auto;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -9999;
+  z-index: -1;
 }
 .golden-ratio-grid.background-grid .grid-border:not(:last-child) {
   border-right: 1px solid #C2C2C2;
 }
 
+.u-position-relative {
+  position: relative;
+}
+.u-flex {
+  display: flex;
+}
+.u-justify-end {
+  justify-content: end;
+}
+
 .title {
-  font-size: 6.8rem;
-  line-height: 8rem;
+  font-size: 7.4rem;
+  font-weight: 600;
+  line-height: 125%;
   color: #000000;
 }
 .title span {
   color: #8A8A8A;
 }
 
+.menu {
+  writing-mode: vertical-rl;
+  display: flex;
+  align-items: center;
+  margin: 6.1rem 0 0 auto;
+  padding: 3.2rem 2.4rem;
+  background-color: #FFFFFF;
+  position: fixed;
+}
+.menu-wrapper {
+  display: flex;
+  justify-content: end;
+}
+.menu .pointer {
+  width: 0.6rem;
+  height: 1.6rem;
+  background-color: #45E5A3;
+  position: absolute;
+  top: 3.2rem;
+  right: 0.8rem;
+}
+.menu .item {
+  font-weight: 600;
+  font-size: 1.9rem;
+  color: #000000;
+  letter-spacing: 0.5px;
+}
+.menu .item:not(:last-child) {
+  margin-bottom: 6.4rem;
+}
+
+.tags {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: -5rem;
+}
+.tags .item {
+  text-transform: uppercase;
+  display: block;
+  font-size: 2.8rem;
+  line-height: 150%;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
 .header .title {
-  padding-top: 36rem;
+  padding-top: 50%;
 }
 .header .logo {
-  margin: 9.2rem 3.2rem 0 auto;
+  position: fixed;
+}
+.header .logo img {
+  margin-top: 9.2rem;
+  margin-right: 2.4rem;
+  width: 8rem;
+  height: 8rem;
 }

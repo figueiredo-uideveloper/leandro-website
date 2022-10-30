@@ -1,0 +1,18 @@
+.u {
+    &-position {
+        &-relative {
+            position: relative;
+        }
+    }
+
+    &-flex {
+        display: flex;
+    }
+
+    &-justify {
+
+        &-end {
+            justify-content: end;
+        }
+    }
+}

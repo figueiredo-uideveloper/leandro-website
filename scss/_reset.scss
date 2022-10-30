@@ -20,6 +20,8 @@ html {
 
 html {
     font-size: 62.5%;
+    background-color: $negative;
+    color: $default;
 }
 
 html,
@@ -27,6 +29,10 @@ body {
     height: auto;
     min-height: 100%;
     font-family: 'Epilogue', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
 }
 
 img {

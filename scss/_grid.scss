@@ -1,12 +1,12 @@
 .container {
     width: 100%;
-    max-width: 1512px;
+    max-width: $desktop;
     margin: 0 auto;
 }
 
 .golden-ratio-grid {
     display: grid;
-    grid-template-columns: $grid-size-3 $grid-size-3 $grid-size-4 $grid-size-3;
+    grid-template-columns: $grid-size-sm $grid-size-sm $grid-size-md $grid-size-sm;
 
     .position {
         &-1 {
@@ -41,16 +41,17 @@
     &.background-grid {
         position: fixed;
         width: 100%;
-        max-width: 1512px;
+        max-width: $desktop;
         margin: 0 auto;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: -9999;
+        z-index: -1;
         
         .grid-border:not(:last-child) {
             border-right: 1px solid $default-100;
+            // opacity: .3;
         }
     }
 }
