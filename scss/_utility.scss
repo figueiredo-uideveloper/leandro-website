@@ -15,4 +15,10 @@
             justify-content: end;
         }
     }
+
+    &-align {
+        &-right {
+            text-align: right;
+        }
+    }
 }

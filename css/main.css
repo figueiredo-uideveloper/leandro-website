@@ -32,6 +32,7 @@ body {
 
 body {
   font-size: 1.6rem;
+  padding-bottom: 12rem;
 }
 
 img {
@@ -103,6 +104,9 @@ button {
 .u-justify-end {
   justify-content: end;
 }
+.u-align-right {
+  text-align: right;
+}
 
 .title {
   font-size: 7.4rem;
@@ -112,6 +116,116 @@ button {
 }
 .title span {
   color: #8A8A8A;
+}
+.title-sm {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.journey-item,
+.certificate-item {
+  margin-top: 7.2rem;
+}
+.journey-item header,
+.certificate-item header {
+  display: flex;
+  align-items: center;
+}
+.journey-item header .icon,
+.certificate-item header .icon {
+  width: 5.4rem;
+  height: 5.4rem;
+  background-color: #C2C2C2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.journey-item header .company h3,
+.certificate-item header .company h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.journey-item header .company p,
+.certificate-item header .company p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #8A8A8A;
+}
+.journey-item .role,
+.certificate-item .role {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 3.2rem;
+}
+.journey-item .role:not(:first-child),
+.certificate-item .role:not(:first-child) {
+  margin-top: 4.8rem;
+}
+.journey-item .role-wrapper,
+.certificate-item .role-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.journey-item .role h3,
+.certificate-item .role h3 {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 150%;
+}
+.journey-item .role p,
+.certificate-item .role p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.journey-item .role p span,
+.certificate-item .role p span {
+  position: relative;
+  font-weight: 700;
+  margin-left: 2.4rem;
+}
+.journey-item .role p span::before,
+.certificate-item .role p span::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #000000;
+  position: absolute;
+  left: -16px;
+  top: calc(50% - 2px);
+}
+
+.journey-item {
+  border-left: 1px solid #000000;
+  margin-left: -1px;
+}
+.journey-item header .icon {
+  margin-right: 1.2rem;
+}
+.journey-item .role {
+  margin-left: 1.6rem;
+}
+.journey-item .role-wrapper {
+  align-items: flex-start;
+}
+
+.certificate-item {
+  text-align: right;
+  border-right: 1px solid #000000;
+}
+.certificate-item header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.certificate-item header .icon {
+  margin-left: 1.2rem;
+}
+.certificate-item .role {
+  margin-right: 1.6rem;
+}
+.certificate-item .role-wrapper {
+  align-items: flex-end;
 }
 
 .menu {
@@ -126,6 +240,7 @@ button {
 .menu-wrapper {
   display: flex;
   justify-content: end;
+  padding-right: 5.2rem;
 }
 .menu .pointer {
   width: 0.6rem;
@@ -171,4 +286,12 @@ button {
   margin-right: 2.4rem;
   width: 8rem;
   height: 8rem;
+}
+
+.section-journey {
+  padding-top: 12.6rem;
+}
+
+.section-certificate {
+  padding-top: 10rem;
 }

@@ -1,0 +1,123 @@
+.journey,
+.certificate {
+    &-item {
+        margin-top: 7.2rem;
+
+        header {
+            display: flex;
+            align-items: center;
+
+            .icon {
+                width: 5.4rem;
+                height: 5.4rem;
+                background-color: $default-100;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .company {
+                h3 {
+                    font-size: 3.2rem;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    color: $default-200;
+                }
+            }
+        }
+
+        .role {
+            background-color: rgba($color: $negative, $alpha: .8);
+            margin-top: 3.2rem;
+
+            &:not(:first-child) {
+                margin-top: 4.8rem;
+            }
+
+            &-wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+
+            h3 {
+                font-weight: 400;
+                font-size: 3.2rem;
+                line-height: 150%;
+            }
+
+            p {
+                font-family: 'Nunito Sans', sans-serif;
+                font-size: 1.6rem;
+                font-weight: 400;
+
+                span {
+                    position: relative;
+                    font-weight: 700;
+                    margin-left: 2.4rem;
+
+                    &::before {
+                        content: '';
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 5px;
+                        background-color: $default;
+                        position: absolute;
+                        left: -16px;
+                        top: calc(50% - 2px);
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.journey {
+    &-item {
+        border-left: 1px solid $default;
+        margin-left: -1px;
+
+        header {
+            .icon {
+                margin-right: 1.2rem;
+            }
+        }
+
+        .role {
+            margin-left: 1.6rem;
+
+            &-wrapper {
+                align-items: flex-start;
+            }
+        }
+    }
+}
+
+.certificate {
+    &-item {
+        text-align: right;
+        border-right: 1px solid $default;
+
+        header {
+            display: flex;
+            flex-direction: row-reverse;
+
+            .icon {
+                margin-left: 1.2rem;
+            }
+        }
+
+        .role {
+            margin-right: 1.6rem;
+
+            &-wrapper {
+                align-items: flex-end;
+            }
+        }
+    }
+}
