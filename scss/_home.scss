@@ -5,14 +5,38 @@
 
     .logo {
         position: fixed;
+        z-index: 999;
 
-        img {
+        svg {
             margin-top: 9.2rem;
             margin-right: 2.4rem;
             width: 8rem;
             height: 8rem;
+
+            #dot-logo {
+                // animation: blinker 5s infinite cubic-bezier(1,0,0,1);
+                animation-name: blinker;
+                animation-iteration-count: infinite;
+                animation-timing-function: cubic-bezier(1,0,0,1);
+                animation-duration: 4s;
+            }
         }
     }
+}
+
+// @keyframes blinker { 
+//     from { opacity: 1.0; } to { opacity: 0.0; }
+// }
+
+@keyframes blinker { 
+    0%   { opacity: 1; }
+    10%  { opacity: 0; }
+    20%  { opacity: 1; }
+    30%  { opacity: 0; }
+    40%  { opacity: 1; }
+    50%  { opacity: 0; }
+    60%  { opacity: 1; }
+    100% { opacity: 1; }
 }
 
 .section-journey {
@@ -35,8 +59,117 @@
 
 footer {
     margin-top: 12rem;
+    padding-bottom: 8.4rem;
 
     .subtitle {
         padding-right: 16rem;
+    }
+
+    .social-network {
+        position: relative;
+        margin-top: 8.8rem;
+        display: flex;
+        justify-content: flex-end;
+        text-align: right;
+
+        &-email,
+        &-label {
+            font-weight: 400;
+            text-decoration: underline;
+        }
+
+        &-email {
+            font-size: 3.2rem;
+            margin-bottom: 3.2rem;
+            line-height: 105%;
+        }
+
+        &-label {
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 2.4rem;
+            color: $default;
+            
+            .icon-square {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 3.2rem;
+                height: 3.2rem;
+                background-color: $default;
+                margin-left: 1.2rem;
+
+                img {
+                    width: 1.8rem;
+                    height: 1.8rem;
+                }
+            }
+        }
+
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 2.8rem;
+            }
+        }
+        
+    }
+
+    .stamp {
+        position: absolute;
+        right: auto;
+        left: 9.2rem;
+        width: 27.4rem;
+        height: 27.4rem;
+
+        &-circle,
+        &-logo {
+            position: absolute;
+        }
+
+        &-circle {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-logo {
+            width: 18%;
+            height: 18%;
+            left: calc(50% - ((18% / 2) - (18% / 5)));
+            top: calc(50% - (18% / 2));
+        }
+    }
+
+    .developed-by {
+        margin-top: 7.4rem;
+        text-align: right;
+
+
+        p {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: $default;
+
+            span {
+                position: relative;
+                font-weight: 700;
+
+                &.dot {
+                    margin-left: calc((8px * 2) + 5px);
+                    &::before {
+                        content: '';
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 5px;
+                        background-color: $default;
+                        position: absolute;
+                        left: -15px;
+                        top: calc(50% - (5px / 2));
+                    }
+                }
+            }
+        }
     }
 }
