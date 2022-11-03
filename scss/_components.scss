@@ -43,37 +43,39 @@
                 display: flex;
                 flex-direction: column;
             }
-
-            h3 {
-                font-weight: 400;
-                font-size: 3.2rem;
-                line-height: 150%;
-            }
-
-            p {
-                font-family: 'Nunito Sans', sans-serif;
-                font-size: 1.6rem;
-                font-weight: 400;
-
-                span {
-                    position: relative;
-                    font-weight: 700;
-                    margin-left: 2.4rem;
-
-                    &::before {
-                        content: '';
-                        width: 5px;
-                        height: 5px;
-                        border-radius: 5px;
-                        background-color: $default;
-                        position: absolute;
-                        left: -16px;
-                        top: calc(50% - 2px);
-                    }
-                }
-            }
         }
         
+    }
+}
+
+.role {
+    h3 {
+        font-weight: 400;
+        font-size: 3.2rem;
+        line-height: 150%;
+    }
+
+    p {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+
+        span {
+            position: relative;
+            font-weight: 700;
+            margin-left: 2.4rem;
+
+            &::before {
+                content: '';
+                width: 5px;
+                height: 5px;
+                border-radius: 5px;
+                background-color: $default;
+                position: absolute;
+                left: -16px;
+                top: calc(50% - 2px);
+            }
+        }
     }
 }
 
@@ -120,4 +122,17 @@
             }
         }
     }
+}
+
+.index-tag {
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $default;
+    color: $negative;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-top: 3px;
 }

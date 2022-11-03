@@ -18,6 +18,34 @@ function sassCompile() {
 }
 gulp.task('sass', sassCompile);
 
+function CssPlugins() {
+    return gulp.src('css/lib/*.css')
+    .pipe(concat('plugins.css'))
+    .pipe(gulp.dest('css/'))
+    .pipe(browserSync.stream());
+}
+gulp.task('CssPlugins', CssPlugins);
+
+function gulpJs() {
+    return gulp.src('js/scripts/*.js')
+    .pipe(concat('all.js'))
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
+    .pipe(uglify())
+    .pipe(gulp.dest('js/'))
+    .pipe(browserSync.stream());
+}
+gulp.task('alljs', gulpJs);
+
+function JsPlugins() {
+    return gulp.src('./js/lib/swiper-bundle.min.js')
+    .pipe(concat('plugins.js'))
+    .pipe(gulp.dest('js/'))
+    .pipe(browserSync.stream());
+}
+gulp.task('JsPlugins', JsPlugins);
+
 function browser() {
     browserSync.init({
         server: {
@@ -30,7 +58,10 @@ gulp.task('browser-syc', browser);
 function watch() {
     gulp.watch('*.html').on('change', browserSync.reload);
     gulp.watch('scss/*.scss', sassCompile);
+    gulp.watch('css/lib/*.css', CssPlugins);
+    gulp.watch('js/scripts/*.js', gulpJs);
+    gulp.watch('js/lib/*.js', JsPlugins);
 }
 gulp.task('watch', watch);
 
-gulp.task('default', gulp.parallel('watch', 'browser-syc', 'sass'));
+gulp.task('default', gulp.parallel('watch', 'browser-syc', 'sass', 'CssPlugins', 'alljs', 'JsPlugins'));

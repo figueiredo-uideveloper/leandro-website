@@ -1,0 +1,84 @@
+.portfolio-slider,
+.control-slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 4.2rem;
+    position: relative;
+}
+
+.portfolio-slider {
+    height: 68.5rem;
+
+    .swiper-slide {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+    }
+}
+
+.control-slider {
+    .index-tag {
+        margin-bottom: 4.2rem;
+    }
+
+    .swiper-slide {
+        background-color: $negative;
+    }
+
+    .case-link {
+        display: block;
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $default;
+        text-decoration: underline;
+        margin-top: 4.8rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 4.8rem;
+        height: 4.8rem;
+        background-color: $default-200;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color .3s;
+        top: 60%;
+
+        &:hover {
+            background-color: $default;
+        }
+    }
+
+    .swiper-button {
+        &-next,
+        &-prev {
+            left: 0;
+
+            &::after {
+                font-size: 0;
+            }
+        }
+
+        &-next {
+            right: auto;
+            left: calc(4.8rem + 3.2rem);
+
+            &::after {
+                content: url(../images/slides/arrow-right.svg);
+            }
+        }
+        &-prev {
+            &::after {
+                content: url(../images/slides/arrow-left.svg);
+            }
+        }
+    }
+}

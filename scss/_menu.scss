@@ -6,6 +6,7 @@
     padding: 3.2rem 2.4rem;
     background-color: $negative;
     position: fixed;
+    z-index: 99999;
 
     &-wrapper {
         display: flex;

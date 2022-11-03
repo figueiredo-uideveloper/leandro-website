@@ -166,26 +166,23 @@ button {
   display: flex;
   flex-direction: column;
 }
-.journey-item .role h3,
-.certificate-item .role h3 {
+
+.role h3 {
   font-weight: 400;
   font-size: 3.2rem;
   line-height: 150%;
 }
-.journey-item .role p,
-.certificate-item .role p {
+.role p {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
 }
-.journey-item .role p span,
-.certificate-item .role p span {
+.role p span {
   position: relative;
   font-weight: 700;
   margin-left: 2.4rem;
 }
-.journey-item .role p span::before,
-.certificate-item .role p span::before {
+.role p span::before {
   content: "";
   width: 5px;
   height: 5px;
@@ -228,6 +225,19 @@ button {
   align-items: flex-end;
 }
 
+.index-tag {
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-top: 3px;
+}
+
 .menu {
   writing-mode: vertical-rl;
   display: flex;
@@ -236,6 +246,7 @@ button {
   padding: 3.2rem 2.4rem;
   background-color: #FFFFFF;
   position: fixed;
+  z-index: 99999;
 }
 .menu-wrapper {
   display: flex;
@@ -275,6 +286,78 @@ button {
   letter-spacing: 1px;
 }
 
+.portfolio-slider,
+.control-slider {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 4.2rem;
+  position: relative;
+}
+
+.portfolio-slider {
+  height: 68.5rem;
+}
+.portfolio-slider .swiper-slide {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.portfolio-slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 0 0;
+  object-position: 0 0;
+}
+
+.control-slider .index-tag {
+  margin-bottom: 4.2rem;
+}
+.control-slider .swiper-slide {
+  background-color: #FFFFFF;
+}
+.control-slider .case-link {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: underline;
+  margin-top: 4.8rem;
+}
+.control-slider .swiper-button-next,
+.control-slider .swiper-button-prev {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: #8A8A8A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  top: 60%;
+}
+.control-slider .swiper-button-next:hover,
+.control-slider .swiper-button-prev:hover {
+  background-color: #000000;
+}
+.control-slider .swiper-button-next, .control-slider .swiper-button-prev {
+  left: 0;
+}
+.control-slider .swiper-button-next::after, .control-slider .swiper-button-prev::after {
+  font-size: 0;
+}
+.control-slider .swiper-button-next {
+  right: auto;
+  left: 8rem;
+}
+.control-slider .swiper-button-next::after {
+  content: url(../images/slides/arrow-right.svg);
+}
+.control-slider .swiper-button-prev::after {
+  content: url(../images/slides/arrow-left.svg);
+}
+
 .header .title {
   padding-top: 50%;
 }
@@ -294,4 +377,13 @@ button {
 
 .section-certificate {
   padding-top: 10rem;
+}
+
+.section-portfolio {
+  padding-top: 4.2rem;
+  position: relative;
+}
+.section-portfolio .slide-title {
+  font-size: 7.2rem;
+  font-weight: 400;
 }
