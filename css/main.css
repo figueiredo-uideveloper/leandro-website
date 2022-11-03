@@ -122,6 +122,16 @@ button {
   font-size: 1.6rem;
 }
 
+.subtitle {
+  font-size: 4.4rem;
+  font-weight: 400;
+  line-height: 140%;
+  color: #000000;
+}
+.subtitle span {
+  color: #8A8A8A;
+}
+
 .journey-item,
 .certificate-item {
   margin-top: 7.2rem;
@@ -386,4 +396,11 @@ button {
 .section-portfolio .slide-title {
   font-size: 7.2rem;
   font-weight: 400;
+}
+
+footer {
+  margin-top: 12rem;
+}
+footer .subtitle {
+  padding-right: 16rem;
 }
