@@ -20,8 +20,8 @@
     var interval = null;
 
     function handle(delta) {
-        var animationInterval = 10; //lower is faster
-        var scrollSpeed = 10; //lower is faster
+        var animationInterval = 350; //lower is faster
+        var scrollSpeed = 350; //lower is faster
 
         if (end == null) {
             end = $(window).scrollTop();

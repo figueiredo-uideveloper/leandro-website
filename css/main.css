@@ -430,15 +430,15 @@ button {
   animation-name: blinker;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 .header .photo {
   position: absolute;
-  left: -480px;
+  left: -450px;
   top: 25rem;
   z-index: -1;
   mix-blend-mode: multiply;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
   opacity: 0;
   transform: translateY(80px);
 }
