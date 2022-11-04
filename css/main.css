@@ -107,20 +107,63 @@ button {
   text-align: right;
 }
 
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .title {
   font-size: 7.4rem;
   font-weight: 600;
   line-height: 125%;
   color: #000000;
 }
-.title span {
+.title mark {
+  cursor: default;
+  padding: 4px 24px;
   color: #8A8A8A;
+  margin-left: -24px;
+  margin-right: -24px;
+  background-color: none;
+  background: linear-gradient(90deg, #45E5A3 49.9%, rgba(255, 255, 255, 0) 49.9%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+.title mark:hover {
+  color: #000000;
+  animation: highlight 1s 1 normal forwards;
 }
 .title-sm {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.6rem;
 }
 
+@keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
 .subtitle {
   font-size: 4.4rem;
   font-weight: 400;
@@ -285,6 +328,7 @@ button {
   position: absolute;
   right: 0;
   bottom: -5rem;
+  mix-blend-mode: difference;
 }
 .tags .item {
   text-transform: uppercase;
@@ -293,6 +337,7 @@ button {
   line-height: 150%;
   font-weight: 300;
   letter-spacing: 1px;
+  color: #FFFFFF;
 }
 
 .portfolio-slider,
@@ -381,38 +426,31 @@ button {
   height: 8rem;
 }
 .header .logo svg #dot-logo {
+  fill: #45E5A3;
   animation-name: blinker;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(1, 0, 0, 1);
   animation-duration: 4s;
 }
-
-@keyframes blinker {
-  0% {
-    opacity: 1;
-  }
-  10% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
+.header .photo {
+  position: absolute;
+  left: -480px;
+  top: 40%;
+  z-index: -1;
+  mix-blend-mode: multiply;
+  opacity: 0;
 }
+.header .aria-highlight {
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 9;
+  left: 0;
+  top: 90%;
+}
+
 .section-journey {
   padding-top: 12.6rem;
 }

@@ -3,6 +3,7 @@
     position: absolute;
     right: 0;
     bottom: -5rem;
+    mix-blend-mode: difference;
     
     .item {
         text-transform: uppercase;
@@ -11,5 +12,6 @@
         line-height: 150%;
         font-weight: 300;
         letter-spacing: 1px;
+        color: $negative;
     }
 }

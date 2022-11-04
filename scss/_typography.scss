@@ -4,13 +4,43 @@
     line-height: 125%;
     color: $default;
 
-    span {
+    mark {
+        cursor: default;
+        padding: 4px 24px;
         color: $default-200;
+        margin-left: -24px;
+        margin-right: -24px;
+        background-color: none;
+        background: linear-gradient(90deg, $primary 49.9%, rgba(255, 255, 255, 0) 49.9%);
+        background-size: 200% 100%;
+        background-position: 100% 0;
+
+        &:hover {
+            color: $default;
+            animation: highlight 1s 1 normal forwards;
+        }
+        
+        // &::after {
+        //     display: inline-block;
+        //     position: absolute;
+        //     z-index: -1;
+        //     background-color: #F2BB05;
+        //     height: 40px; 
+        //     width: 0%;
+        //     transition: width 0.5s;
+        //     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        // }
     }
 
     &-sm {
         font-family: 'Nunito Sans', sans-serif;
         font-size: 1.6rem;
+    }
+}
+
+@keyframes highlight {
+    to {
+        background-position: 0 0;
     }
 }
 
