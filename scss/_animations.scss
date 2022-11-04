@@ -8,3 +8,9 @@
     60%  { opacity: 1; }
     100% { opacity: 1; }
 }
+
+@keyframes highlight {
+    to {
+        background-position: 0 0;
+    }
+}
