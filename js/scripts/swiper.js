@@ -2,7 +2,9 @@ const portfolio_slider = new Swiper('.portfolio-slider', {
   direction: "vertical",
   slidesPerView: 1,
   spaceBetween: 30,
-  mousewheel: true,
+  mousewheel: {
+    releaseOnEdges: true,
+  },
 });
 
 const control_slider = new Swiper('.control-slider', {
