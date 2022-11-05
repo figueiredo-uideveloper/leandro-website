@@ -41,7 +41,7 @@ function gulpJs() {
 gulp.task('alljs', gulpJs);
 
 function JsPlugins() {
-    return gulp.src('./js/lib/swiper-bundle.min.js')
+    return gulp.src('./js/lib/*.js')
     .pipe(concat('plugins.js'))
     .pipe(gulp.dest('js/'))
     .pipe(browserSync.stream());
