@@ -1,6 +1,6 @@
 .header {
-    .title {
-        padding-top: 50%;
+    .banner {
+        margin-top: 60%;
     }
 
     .logo {
@@ -21,32 +21,6 @@
                 animation-duration: 2s;
             }
         }
-    }
-
-    .photo {
-        position: absolute;
-        left: -450px;
-        top: 25rem;
-        z-index: -1;
-        mix-blend-mode: multiply;
-        transition: all .4s ease-in-out;
-        opacity: 0;
-        transform: translateY(80px);
-        
-        &.hover {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .aria-highlight {
-        position: absolute;
-        width: 100%;
-        height: 30rem;
-        opacity: 0;
-        z-index: 9;
-        left: 0;
-        top: 53rem;
     }
 }
 
@@ -181,25 +155,6 @@ footer {
                     }
                 }
             }
-        }
-    }
-
-    mark {
-        cursor: default;
-        padding: 4px 8px;
-        color: $default-200;
-        margin-left: -8px;
-        margin-right: -8px;
-        background-color: none;
-        background: linear-gradient(90deg, $primary 49.9%, rgba(255, 255, 255, 0) 49.9%);
-        background-size: 200% 100%;
-        background-position: 100% 0;
-    }
-
-    &.highlight-active {
-        mark {
-            color: $default;
-            animation: highlight 1s 1 normal forwards;
         }
     }
 }
