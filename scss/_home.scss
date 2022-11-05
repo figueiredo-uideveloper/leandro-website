@@ -183,4 +183,23 @@ footer {
             }
         }
     }
+
+    mark {
+        cursor: default;
+        padding: 4px 8px;
+        color: $default-200;
+        margin-left: -8px;
+        margin-right: -8px;
+        background-color: none;
+        background: linear-gradient(90deg, $primary 49.9%, rgba(255, 255, 255, 0) 49.9%);
+        background-size: 200% 100%;
+        background-position: 100% 0;
+    }
+
+    &.highlight-active {
+        mark {
+            color: $default;
+            animation: highlight 1s 1 normal forwards;
+        }
+    }
 }

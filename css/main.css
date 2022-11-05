@@ -566,3 +566,18 @@ footer .developed-by p span.dot::before {
   left: -15px;
   top: calc(50% - 2.5px);
 }
+footer mark {
+  cursor: default;
+  padding: 4px 8px;
+  color: #8A8A8A;
+  margin-left: -8px;
+  margin-right: -8px;
+  background-color: none;
+  background: linear-gradient(90deg, #45E5A3 49.9%, rgba(255, 255, 255, 0) 49.9%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+footer.highlight-active mark {
+  color: #000000;
+  animation: highlight 1s 1 normal forwards;
+}
