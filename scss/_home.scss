@@ -70,12 +70,10 @@ footer {
         }
 
         &-label {
-
             display: flex;
             align-items: center;
             justify-content: flex-end;
             font-size: 2.4rem;
-            color: $default;
             
             .icon-square {
                 display: flex;
@@ -83,7 +81,6 @@ footer {
                 justify-content: center;
                 width: 3.2rem;
                 height: 3.2rem;
-                background-color: $default;
                 margin-left: 1.2rem;
 
                 img {

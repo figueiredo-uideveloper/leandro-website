@@ -28,15 +28,10 @@
         margin-bottom: 4.2rem;
     }
 
-    .swiper-slide {
-        background-color: $negative;
-    }
-
     .case-link {
         display: block;
         font-size: 2.4rem;
         font-weight: 700;
-        color: $default;
         text-decoration: underline;
         margin-top: 4.8rem;
     }
@@ -45,16 +40,12 @@
     .swiper-button-prev {
         width: 4.8rem;
         height: 4.8rem;
-        background-color: $default-200;
         display: flex;
         align-items: center;
         justify-content: center;
         transition: background-color .3s;
+        will-change: background-color;
         top: 60%;
-
-        &:hover {
-            background-color: $default;
-        }
     }
 
     .swiper-button {

@@ -32,7 +32,6 @@
         }
 
         .role {
-            background-color: rgba($color: $negative, $alpha: .8);
             margin-top: 3.2rem;
 
             &:not(:first-child) {
@@ -70,7 +69,6 @@
                 width: 5px;
                 height: 5px;
                 border-radius: 5px;
-                background-color: $default;
                 position: absolute;
                 left: -16px;
                 top: calc(50% - 2px);
@@ -81,7 +79,8 @@
 
 .journey {
     &-item {
-        border-left: 1px solid $default;
+        border-left-width: 1px;
+        border-left-style: solid;
         margin-left: -1px;
 
         header {
@@ -130,8 +129,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $default;
-    color: $negative;
     font-size: 2.4rem;
     font-weight: 700;
     padding-top: 3px;

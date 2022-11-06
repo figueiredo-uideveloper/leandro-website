@@ -4,9 +4,10 @@
     align-items: center;
     margin: 6.1rem 0 0 auto;
     padding: 3.2rem 2.4rem;
-    background-color: $negative;
     position: fixed;
     z-index: 99999;
+    transition: background-color .3s;
+    will-change: background-color;
 
     &-wrapper {
         display: flex;
@@ -26,7 +27,6 @@
     .item {
         font-weight: 600;
         font-size: 1.9rem;
-        color: $default;
         letter-spacing: .5px;
 
         &:not(:last-child) {

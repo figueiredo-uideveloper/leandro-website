@@ -1,0 +1,198 @@
+[data-theme="dark-mode"] {
+    body {
+        color: $default;
+    }
+
+    .background-color {
+        background-color: $default;
+    }
+
+    .background-grid {
+        .grid-border:not(:last-child) {
+            border-right: 1px solid $default-100;
+            opacity: .3;
+        }
+    }
+
+    .title {
+        color: $negative;
+    }
+
+    .subtitle {
+        color: $negative;
+    
+        span {
+            color: $default-200;
+        }
+    }
+
+    .menu {
+        background-color: $default;
+
+        .item {
+            color: $negative;
+        }
+    }
+
+    .journey,
+    .certificate {
+        &-item {
+            border-color: $negative;
+
+            .company {
+                h3 {
+                    color: $negative;
+                }
+            }
+
+            .role {
+                background-color: rgba($color: $default, $alpha: .5);
+                color: $negative;
+
+                p {
+                    span {
+                        &::before {
+                            background-color: $negative;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-slide {
+        background-color: $default;
+    }
+
+    .index-tag {
+        background-color: $negative;
+        color: $default;
+    }
+
+    .control-slider {
+        color: $negative;
+        
+        .case-link {
+            color: $negative;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: $default-200;
+
+            &:hover {
+                background-color: $negative;
+            }
+        }
+    }
+
+    .social-network {
+        &-email,
+        &-label {
+            color: $negative;
+        }
+            
+        .icon-square {
+            background-color: $negative;
+        }
+    }
+}
+
+[data-theme="light-mode"] {
+    body {
+        color: $negative;
+    }
+
+    .background-color {
+        background-color: $negative;
+    }
+
+    .background-grid {
+        .grid-border:not(:last-child) {
+            border-right: 1px solid $default-100;
+        }
+    }
+
+    .title {
+        color: $default;
+    }
+
+    .subtitle {
+        color: $default;
+    
+        span {
+            color: $default-200;
+        }
+    }
+
+    .menu {
+        background-color: $negative;
+
+        .item {
+            color: $default;
+        }
+    }
+
+    .journey,
+    .certificate {
+        &-item {
+            border-color: $default;
+
+            .company {
+                h3 {
+                    color: $default;
+                }
+            }
+
+            .role {
+                background-color: rgba($color: $negative, $alpha: .5);
+                color: $default;
+
+                p {
+                    span {
+                        &::before {
+                            background-color: $default;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .index-tag {
+        background-color: $default;
+        color: $negative;
+    }
+
+    .swiper-slide {
+        background-color: $negative;
+    }
+
+    .control-slider {
+        color: $default;
+
+        .case-link {
+            color: $default;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: $default-200;
+
+            &:hover {
+                background-color: $default;
+            }
+        }
+    }
+
+    .social-network {
+        &-email,
+        &-label {
+            color: $default;
+        }
+            
+        .icon-square {
+            background-color: $default;
+        }
+    }
+}

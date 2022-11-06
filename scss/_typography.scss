@@ -2,7 +2,6 @@
     font-size: 7.4rem;
     font-weight: 600;
     line-height: 125%;
-    color: $default;
 
     &-sm {
         font-family: 'Nunito Sans', sans-serif;
@@ -14,10 +13,4 @@
     font-size: 4.4rem;
     font-weight: 400;
     line-height: 140%;
-    color: $default;
-
-    span {
-        color: $default-200;
-    }
-
 }

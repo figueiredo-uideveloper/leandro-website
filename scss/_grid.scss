@@ -48,10 +48,5 @@
         right: 0;
         bottom: 0;
         z-index: -1;
-        
-        .grid-border:not(:last-child) {
-            border-right: 1px solid $default-100;
-            // opacity: .3;
-        }
     }
 }
