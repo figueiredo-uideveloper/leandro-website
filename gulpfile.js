@@ -6,6 +6,28 @@ const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
+const svgSprite = require('gulp-svg-sprite');
+
+const svgspriteConfig = {
+    mode: {
+        symbol: {
+            dest: 'sprite',
+            sprite: 'sprite.svg',
+            exemple: false
+        },
+        svg: {
+            xmlDeclaration: false,
+            doctypeDeclaration: false
+        }
+    }
+};
+
+function buildSprites() {
+    return gulp.src('images/icons/**/*.svg')
+    .pipe(svgSprite(svgspriteConfig))
+    .pipe(gulp.dest('images/'));
+}
+gulp.task('sprites', buildSprites)
 
 function sassCompile() {
     return gulp.src('scss/*.scss')
