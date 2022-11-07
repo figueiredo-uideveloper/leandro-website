@@ -16,6 +16,10 @@
 
     .title {
         color: $negative;
+
+        &-sm {
+            color: $negative;
+        }
     }
 
     .subtitle {
@@ -24,6 +28,10 @@
         span {
             color: $default-200;
         }
+    }
+
+    .slide-title {
+        color: $negative;
     }
 
     .menu {
@@ -150,6 +158,10 @@
 
     .title {
         color: $default;
+
+        &-sm {
+            color: $default;
+        }
     }
 
     .subtitle {
@@ -158,6 +170,10 @@
         span {
             color: $default-200;
         }
+    }
+
+    .slide-title {
+        color: $default;
     }
 
     .menu {

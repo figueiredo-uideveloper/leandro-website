@@ -138,3 +138,77 @@
     font-weight: 700;
     padding-top: 3px;
 }
+
+
+[data-switch-theme] {
+    position: fixed;
+    bottom: 8.4rem;
+    margin-right: 0.8rem;
+    z-index: 99999;
+}
+
+input[type=checkbox].toggle-switch {
+    transform: rotate(90deg);
+    
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+    cursor: pointer;
+    
+    // Since this is rotated 90deg 
+    // height and width are reversed
+    
+    /* width of the track */
+    width: 4em;
+    /* height of the track */
+    height: 1.5em;
+    border-radius: 3em;
+    background-color: #ccc;
+    
+    transition: background-color 0.09s ease-in-out;
+    position: relative;
+        
+    &:active::after {
+        background-color: #f2f2f2;
+        padding-right: .8em;
+    }
+    
+    &::after {
+        content: url(../images/icons/icon-sun.svg);
+        /* toggle shape -- 
+        height should equal width 
+        to maintain circle */
+        box-sizing: border-box;
+        padding: 0.6rem;
+        width: 2em; 
+        height: 2em;
+        background-color: white;
+        border-radius: 3em;
+        position: absolute;
+        left: -5px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: left .3s cubic-bezier(
+            0.175, 0.885, 0.320, 1.275
+            ),
+            padding .3s ease, margin .3s ease;
+        box-shadow: 3px 0px 8px 0 rgba(0,0,0,0.35);
+    }
+}
+
+input[type=checkbox].toggle-switch:checked {
+    background-color: #333;
+    &:active::after {
+        margin-left: -.8em;
+    }
+    &::after {
+        content: url(../images/icons/icon-moon.svg);
+        // Location of toggle handle when checked
+        // should equal ~ .5 of the width of
+        // input[type=checkbox].toggle-switch
+        left: 2em;
+        background-color: #242424;
+    }
+}
+ 
