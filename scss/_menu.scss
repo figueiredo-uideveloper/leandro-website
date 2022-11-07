@@ -21,6 +21,8 @@
         background-color: $primary;
         position: absolute;
         top: 3.2rem;
+        transition: top .3s;
+        will-change: top;
         right: 0.8rem;
     }
 
