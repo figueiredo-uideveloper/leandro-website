@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     margin: 6.1rem 0 0 auto;
-    padding: 3.2rem 2.4rem;
+    padding: 3.2rem 2.4rem 4.2rem 2.4rem;
     position: fixed;
     z-index: 99999;
     transition: background-color .3s;
@@ -26,7 +26,7 @@
 
     .item {
         font-weight: 600;
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         letter-spacing: .5px;
 
         &:not(:last-child) {

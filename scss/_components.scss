@@ -141,10 +141,11 @@
 
 
 [data-switch-theme] {
-    position: fixed;
-    bottom: 8.4rem;
-    margin-right: 0.8rem;
-    z-index: 99999;
+    position: relative;
+    width: 1.6rem;
+    margin-top: 3.6rem;
+    display: flex;
+    align-items: center;
 }
 
 input[type=checkbox].toggle-switch {
@@ -162,7 +163,7 @@ input[type=checkbox].toggle-switch {
     /* width of the track */
     width: 4em;
     /* height of the track */
-    height: 1.5em;
+    height: 1em;
     border-radius: 3em;
     background-color: #ccc;
     
