@@ -53,6 +53,9 @@
 }
 
 .role {
+    transition: background-color .3s;
+    will-change: background-color;
+    
     h3 {
         font-weight: 400;
         font-size: 3.2rem;
@@ -157,12 +160,7 @@ input[type=checkbox].toggle-switch {
     outline: 0;
     cursor: pointer;
     
-    // Since this is rotated 90deg 
-    // height and width are reversed
-    
-    /* width of the track */
     width: 4em;
-    /* height of the track */
     height: 1em;
     border-radius: 3em;
     background-color: #ccc;
@@ -177,9 +175,6 @@ input[type=checkbox].toggle-switch {
     
     &::after {
         content: url(../images/icons/icon-sun.svg);
-        /* toggle shape -- 
-        height should equal width 
-        to maintain circle */
         box-sizing: border-box;
         padding: 0.6rem;
         width: 2em; 
@@ -205,9 +200,6 @@ input[type=checkbox].toggle-switch:checked {
     }
     &::after {
         content: url(../images/icons/icon-moon.svg);
-        // Location of toggle handle when checked
-        // should equal ~ .5 of the width of
-        // input[type=checkbox].toggle-switch
         left: 2em;
         background-color: #242424;
     }
