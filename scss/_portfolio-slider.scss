@@ -51,6 +51,11 @@
     .swiper-button {
         &-next,
         &-prev {
+            svg {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+
             left: 0;
 
             &::after {
@@ -63,12 +68,12 @@
             left: calc(4.8rem + 3.2rem);
 
             &::after {
-                content: url(../images/slides/arrow-right.svg);
+                content: '';
             }
         }
         &-prev {
             &::after {
-                content: url(../images/slides/arrow-left.svg);
+                content: '';
             }
         }
     }

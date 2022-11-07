@@ -80,8 +80,16 @@
         .swiper-button-prev {
             background-color: $default-200;
 
+            svg {
+                fill: $negative;
+            }
+
             &:hover {
                 background-color: $negative;
+
+                svg {
+                    fill: $default;
+                }
             }
         }
     }
@@ -94,6 +102,33 @@
             
         .icon-square {
             background-color: $negative;
+
+            svg {
+                fill: $default;
+            }
+        }
+    }
+
+    .stamp {
+        &-circle,
+        &-logo {
+            .fill-path {
+                fill: $negative;
+            }
+        }
+    }
+
+    .developed-by {
+        p {
+            color: $negative;
+
+            span {
+                &.dot {
+                    &::before {
+                        background-color: $negative;
+                    }
+                }
+            }
         }
     }
 }
@@ -179,6 +214,10 @@
         .swiper-button-prev {
             background-color: $default-200;
 
+            svg {
+                fill: $negative;
+            }
+
             &:hover {
                 background-color: $default;
             }
@@ -193,6 +232,33 @@
             
         .icon-square {
             background-color: $default;
+
+            svg {
+                fill: $negative;
+            }
+        }
+    }
+
+    .stamp {
+        &-circle,
+        &-logo {
+            .fill-path {
+                fill: $default;
+            }
+        }
+    }
+
+    .developed-by {
+        p {
+            color: $default;
+
+            span {
+                &.dot {
+                    &::before {
+                        background-color: $default;
+                    }
+                }
+            }
         }
     }
 }

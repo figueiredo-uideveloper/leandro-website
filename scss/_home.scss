@@ -83,9 +83,9 @@ footer {
                 height: 3.2rem;
                 margin-left: 1.2rem;
 
-                img {
-                    width: 1.8rem;
-                    height: 1.8rem;
+                svg {
+                    width: 2rem;
+                    height: 2rem;
                 }
             }
         }
@@ -108,6 +108,11 @@ footer {
         &-circle,
         &-logo {
             position: absolute;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
         }
 
         &-circle {
@@ -128,12 +133,10 @@ footer {
         margin-top: 7.4rem;
         text-align: right;
 
-
         p {
             font-family: 'Nunito Sans', sans-serif;
             font-size: 1.2rem;
             font-weight: 400;
-            color: $default;
 
             span {
                 position: relative;
@@ -146,7 +149,6 @@ footer {
                         width: 5px;
                         height: 5px;
                         border-radius: 5px;
-                        background-color: $default;
                         position: absolute;
                         left: -15px;
                         top: calc(50% - (5px / 2));
