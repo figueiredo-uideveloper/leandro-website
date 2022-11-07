@@ -52,7 +52,7 @@ footer {
 
     .social-network {
         position: relative;
-        margin-top: 8.8rem;
+        margin-top: 9.2rem;
         display: flex;
         justify-content: flex-end;
         text-align: right;
@@ -65,7 +65,7 @@ footer {
 
         &-email {
             font-size: 3.2rem;
-            margin-bottom: 3.2rem;
+            margin-bottom: 6.4rem;
             line-height: 105%;
         }
 
@@ -92,7 +92,7 @@ footer {
 
         &-item {
             &:not(:last-child) {
-                margin-bottom: 2.8rem;
+                margin-bottom: 3.2rem;
             }
         }
         
@@ -130,7 +130,7 @@ footer {
     }
 
     .developed-by {
-        margin-top: 7.4rem;
+        margin-top: 12.4rem;
         text-align: right;
 
         p {
