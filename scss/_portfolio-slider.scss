@@ -26,14 +26,15 @@
 }
 
 .portfolio-slider {
-    height: 21.9rem;
-
+    height: 68.5rem;
+    
     @media (max-width: $mobile) {
         &.position-3 {
             grid-column-start: 1;
             grid-column-end: 4;
         }
-
+        
+        height: 21.9rem;
         margin-top: 2.4rem;
     }
 
