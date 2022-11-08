@@ -1,3 +1,12 @@
+.slide-title {
+    font-size: 7.2rem;
+    font-weight: 400;
+
+    @media (max-width: $mobile) {
+        font-size: 3.2rem;
+    }
+}
+
 .portfolio-slider,
 .control-slider {
     width: 100%;
@@ -9,10 +18,24 @@
         transition: background-color .3s;
         will-change: background-color;
     }
+
+    @media (max-width: $mobile) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
 }
 
 .portfolio-slider {
-    height: 68.5rem;
+    height: 21.9rem;
+
+    @media (max-width: $mobile) {
+        &.position-3 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        margin-top: 2.4rem;
+    }
 
     .swiper-slide {
         width: 100%;
@@ -30,7 +53,21 @@
 
 .control-slider {
     .index-tag {
-        margin-bottom: 4.2rem;
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 0.8rem;
+        padding-top: 3px;
+        
+        @media (max-width: $mobile) {
+            width: 3.2rem;
+            height: 3.2rem;
+            font-size: 1.8rem;
+        }
     }
 
     .case-link {
@@ -38,7 +75,12 @@
         font-size: 2.4rem;
         font-weight: 700;
         text-decoration: underline;
-        margin-top: 4.8rem;
+        margin-top: 8rem;
+        
+        @media (max-width: $mobile) {
+            margin-top: 2.4rem;
+            padding-bottom: 6rem;
+        }
     }
 
     .swiper-button-next,
@@ -51,6 +93,13 @@
         transition: background-color .3s;
         will-change: background-color;
         top: 60%;
+        
+        @media (max-width: $mobile) {
+            width: 3.2rem;
+            height: 3.2rem;
+            top: auto;
+            bottom: 0;
+        }
     }
 
     .swiper-button {
@@ -59,9 +108,19 @@
             svg {
                 width: 2.4rem;
                 height: 2.4rem;
+
+                @media (max-width: $mobile) {
+                    width: 1.8rem;
+                    height: 1.8rem;
+                }
             }
 
             left: 0;
+
+            @media (max-width: $mobile) {
+                left: auto;
+                right: calc(3.2rem + 3.2rem);
+            }
 
             &::after {
                 font-size: 0;
@@ -71,6 +130,11 @@
         &-next {
             right: auto;
             left: calc(4.8rem + 3.2rem);
+            
+            @media (max-width: $mobile) {
+                left: auto;
+                right: 0;
+            }
 
             &::after {
                 content: '';
