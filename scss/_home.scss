@@ -13,6 +13,11 @@
             width: 8rem;
             height: 8rem;
 
+            @media (max-width: $mobile) {
+                width: 3.2rem;
+                height: 3.2rem;
+            }
+
             #dot-logo {
                 fill: $primary;
                 animation-name: blinker;

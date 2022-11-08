@@ -13,5 +13,9 @@
         font-weight: 300;
         letter-spacing: 1px;
         color: $negative;
+
+        @media (max-width: $mobile) {
+            font-size: 0.8rem;
+        }
     }
 }

@@ -9,10 +9,19 @@
     transition: background-color .3s;
     will-change: background-color;
 
+    @media (max-width: $mobile) {
+        padding: 3.2rem 1.6rem 4.2rem 1.6rem;
+        margin: 1.6rem 0.8rem 0 0;
+    }
+
     &-wrapper {
         display: flex;
         justify-content: end;
         padding-right: 5.2rem;
+
+        @media (max-width: $mobile) {
+            padding-right: 0;
+        }
     } 
 
     .pointer {
@@ -33,6 +42,10 @@
 
         &:not(:last-child) {
             margin-bottom: 6.4rem;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 1.2rem;
         }
     }
 }
