@@ -4,6 +4,14 @@
     right: 0;
     bottom: -4rem;
     mix-blend-mode: difference;
+
+    @media (max-width: $mobile) {
+        text-align: left;
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        min-width: 80px;
+    }
     
     .item {
         text-transform: uppercase;

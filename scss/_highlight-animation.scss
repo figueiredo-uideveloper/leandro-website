@@ -28,9 +28,25 @@ mark {
     left: -450px;
     top: 25rem;
     z-index: -1;
+    overflow: hidden;
     transition: all .8s ease-in-out;
     opacity: 0;
     transform: translateY(80px);
+
+    @media (max-width: $mobile) {
+        width: 50%;
+        height: 68vh;
+        left: -50%;
+        top: 25vh;
+
+        img {
+            max-width: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scaleX(-1);
+        }
+    }
 }
 
 [data-highlight="on"] {

@@ -1,6 +1,14 @@
 .header {
     .banner {
         margin-top: 60%;
+
+        @media (max-width: $mobile) {
+            margin-top: 40vh;
+
+            .title {
+                text-align: right;
+            }
+        }
     }
 
     .logo {
@@ -12,10 +20,12 @@
             margin-right: 2.4rem;
             width: 8rem;
             height: 8rem;
-
+            
             @media (max-width: $mobile) {
                 width: 3.2rem;
                 height: 3.2rem;
+                margin-top: 4.8rem;
+                margin-right: -3.2rem;
             }
 
             #dot-logo {
