@@ -6,6 +6,9 @@
   "repository": "git@github.com:figueiredo-uideveloper/leandro-website.git",
   "author": "Leandro <uideveloper@figueiredo.dev>",
   "license": "MIT",
+  "scripts": {
+    "build": "gulp build"
+  },
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
