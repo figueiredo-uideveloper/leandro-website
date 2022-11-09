@@ -110,7 +110,7 @@ function buildJsPlugins() {
 gulp.task('buildJsPlugins', buildJsPlugins);
 
 function buildImages() {
-    return gulp.src('./images/*')
+    return gulp.src('./images/**/*')
     .pipe(gulp.dest('public/images/'));
 }
 gulp.task('buildImages', buildImages);
