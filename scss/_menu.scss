@@ -12,7 +12,6 @@
     @media (max-width: $mobile) {
         padding: 3.2rem 1.6rem 6.2rem 1.6rem;
         margin: 1.6rem 0.8rem 0 0;
-        bottom: 0;
     }
 
     &-wrapper {
@@ -42,7 +41,7 @@
         letter-spacing: .5px;
 
         &:not(:last-child) {
-            margin-bottom: 6.4rem;
+            margin-bottom: 4.8rem;
         }
 
         @media (max-width: $mobile) {
