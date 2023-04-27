@@ -5,7 +5,6 @@ const tagHtml = document.querySelector('html');
 
 const toggleTheme = () => {
     const currentMode = switchTheme.getAttribute('data-switch-theme');
-    console.log(inputCheckbox);
 
     if (currentMode === 'dark') {
         switchTheme.setAttribute('data-switch-theme', 'light');
