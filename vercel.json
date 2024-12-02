@@ -1,9 +1,0 @@
-{
-    "routes": [
-      {
-        "src": "/editoracdb-bibliasagrada",
-        "dest": "./editoracdb-bibliasagrada/index.html"
-      }
-    ]
-  }
-  
