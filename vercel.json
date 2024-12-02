@@ -1,7 +1,7 @@
 {
     "routes": [
       {
-        "src": "/bibliasagradacdb/?",
+        "src": "/editoracdb-bibliasagrada/?",
         "dest": "/editoracdb-bibliasagrada/index.html"
       }
     ]
